@@ -106,6 +106,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Event"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/trajectory#Place"/>
+        <rdfs:comment>A property that describes where an action occurred.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -117,6 +118,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Event"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
+        <rdfs:comment>A property that describes when an action occurred.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -149,6 +151,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#violatedByAction">
         <owl:inverseOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/violatesEthicalPrinciple"/>
+        <rdfs:comment>This property describes the ethical principle that was violated by the occurrence of an action.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -433,6 +436,7 @@ This property describes the relationship between an active agent and the action 
     <owl:DatatypeProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/hasScore">
         <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
         <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+        <rdfs:comment>Provides a descriptive value to the important factors we have considered that help to make a decision regarding the morality of an action.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -442,6 +446,7 @@ This property describes the relationship between an active agent and the action 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>A data property reused from the time ODP and describes when an event begins to occur.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -451,6 +456,7 @@ This property describes the relationship between an active agent and the action 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment>A data property reused from the time ODP and describes when an event ends.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1924,6 +1930,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/SocialEcology">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
+        <rdfs:comment>Social ecology studies relationships between people and their environment, often the interdependence of people, collectives and institutions.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1933,6 +1940,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Solidarity">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>Unity or agreement of feeling or action.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1941,6 +1949,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/StakeholderBalance">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicsPhilosophy"/>
+        <rdfs:comment>Stakeholder balance ensures that all individuals or groups with a vested interest in the company or the project have aligned interests and are compensated fairly without significant compromise from one party over another.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1949,6 +1958,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Sustainability">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>Sustainability is an environmental issue that has to do with reusing resources for energy generation and regular consumption in order to utilize them for longer.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1957,6 +1967,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/ToxicWorkEnvironment">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>A toxic work environment is one where negative, antagonistic, or bullying behavior is highly prominent at the workplace.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1966,6 +1977,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Transparency">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>Transparency is a principle that has to do with a clarity of motives and procedure regarding a certain action.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1974,6 +1986,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/UnethicalAdvertising">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/ConsumerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>Unethical advertising practices advertise a product or product feature in a controversial way to persuade a customer to buy it. (via IGI Global)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1983,6 +1996,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/UnreasonableCompensation">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
         <apple:resolvedBy rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/StakeholderBalance"/>
+        <rdfs:comment>Unreasonable compensation is a level of compensation for owner-managers that does not meet the requirements for reasonable compensation. This may be either too low a compensation level or too high, depending upon the form of incorporation. (via Economic Research Institute)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1991,6 +2005,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/VirtueEthicsForBusiness">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicsPhilosophy"/>
+        <rdfs:comment>Virtue ethics in business favors the demonstration of virtues such as honesty, diligence, responsibility, and compassion at the workplace.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1999,6 +2014,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Whistleblowing">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>Whistleblowing is the lawful disclosure of information a discloser reasonably believes evidences wrongdoing to an authorized recipient. (via DNI.gov)</rdfs:comment>
     </owl:NamedIndividual>
     
 
